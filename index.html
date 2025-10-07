@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Artikel Responsif - Tanah Longsor</title>
+  <style>
+    /* Reset dasar */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: "Segoe UI", Arial, sans-serif;
+      line-height: 1.6;
+      margin: 0;
+      padding: 0;
+      background: #f9f9f9;
+      color: #333;
+    }
+
+    header, footer {
+      background: #2c3e50;
+      color: white;
+      padding: 20px 15px;
+      text-align: center;
+    }
+
+    header h1 {
+      margin-bottom: 10px;
+    }
+
+    nav a {
+      color: white;
+      margin: 0 12px;
+      text-decoration: none;
+      font-weight: bold;
+      transition: color 0.3s ease;
+    }
+
+    nav a:hover {
+      color: #f39c12;
+    }
+
+    main {
+      padding: 25px;
+      max-width: 900px;
+      margin: auto;
+    }
+
+    article h2 {
+      margin-bottom: 8px;
+      color: #2c3e50;
+    }
+
+    article p small {
+      color: #777;
+    }
+
+    section, aside {
+      margin-top: 35px;
+    }
+
+    figure {
+      margin: 20px 0;
+      text-align: center;
+    }
+
+    figcaption {
+      font-size: 14px;
+      color: #555;
+      margin-top: 6px;
+    }
+
+    img {
+      max-width: 100%;
+      height: auto;
+      border-radius: 10px;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+    }
+
+    /* Galeri pakai grid */
+    .galeri {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 20px;
+    }
+
+    @media (min-width: 700px) {
+      .galeri {
+        grid-template-columns: 1fr 1fr; /* jadi 2 kolom di layar lebar */
+      }
+    }
+
+    aside {
+      background: #fff;
+      border-left: 4px solid #c0392b;
+      padding: 15px;
+      border-radius: 6px;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+    }
+
+    aside h4 {
+      margin-bottom: 10px;
+      color: #c0392b;
+    }
+
+    aside a {
+      color: #2980b9;
+      text-decoration: none;
+      transition: color 0.3s;
+    }
+
+    aside a:hover {
+      color: #f39c12;
+    }
+
+    footer p {
+      font-size: 14px;
+    }
+
+    /* kecilkan teks metadata di tampilan mobile */
+    @media (max-width: 480px) {
+      article p small {
+        font-size: 12px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Berita Bencana</h1>
+    <nav>
+      <a href="#">Home</a>
+      <a href="#">Kategori</a>
+      <a href="#">Bencana</a>
+    </nav>
+  </header>
+
+  <main>
+    <article>
+      <h2>Tanah Longsor Landa Perumahan, Evakuasi dan Penanganan Darurat Dilakukan</h2>
+      <p><small>Penulis: Moh Kahfi Kurniawan | 06 Oktober 2025</small></p>
+
+      <!-- Gambar utama -->
+      <figure>
+        <img
+          src="tanahlongsorkecil.jpg"
+          srcset="tanahlongsorkecil.jpg 600w, tanahlongsorbesar.jpg 1200w"
+          sizes="(max-width: 600px) 100vw, 800px"
+          loading="eager"
+          alt="Bahu bukit yang longsor menimpa bangunan">
+        <figcaption>Longsor terjadi pada lereng perumahan, menimpa beberapa rumah dan akses jalan.</figcaption>
+      </figure>
+
+      <p>
+        Hujan deras yang berlangsung selama beberapa jam menyebabkan tanah longsor di kawasan perumahan
+        di kaki bukit. Petugas gabungan bersama warga setempat melakukan evakuasi dan mengevakuasi korban
+        ke titik posko darurat. Sejumlah rumah mengalami kerusakan, sementara jalan akses terputus oleh material longsor.
+      </p>
+
+      <p>
+        Tim SAR fokus pada pencarian korban yang belum ditemukan serta pembersihan material longsor untuk
+        membuka kembali akses. Kepala BPBD setempat mengimbau warga untuk menjauhi area terdampak dan
+        memberikan laporan bila ada warga yang membutuhkan bantuan medis segera.
+      </p>
+    </article>
+
+    <!-- Galeri Foto Terkait -->
+    <section>
+      <h3>Galeri Foto Terkait</h3>
+      <div class="galeri">
+        <figure>
+          <img src="gambar1.jpg" loading="lazy" alt="Evakuasi warga pasca longsor">
+          <figcaption>Tanah Longor.</figcaption>
+        </figure>
+
+        <figure>
+          <img src="galeri2.jpeg" loading="lazy" alt="Alat berat membersihkan material longsor">
+          <figcaption>Alat berat dikerahkan untuk pembersihan material longsor di akses jalan.</figcaption>
+        </figure>
+      </div>
+    </section>
+
+    <!-- Konten tambahan -->
+    <aside>
+      <h4>Info Penting &amp; Cara Menghadapi Longsor</h4>
+      <p><strong>Jika Anda berada di area rawan:</strong></p>
+      <ul>
+        <li>Segera menjauh dari lereng/bahu bukit yang retak atau berair.</li>
+        <li>Tutup hidung dan mulut dengan kain ketika melewati area berdebu.</li>
+        <li>Ikuti instruksi petugas dan menuju ke pos evakuasi terdekat.</li>
+      </ul>
+
+      <p><strong>Kontak darurat lokal:</strong></p>
+      <p>BPBD: 112 atau 115 (sesuaikan dengan nomor lokal Anda)</p>
+
+      <p><a href="#">Panduan Siaga Bencana: Apa yang Harus Dilakukan Saat Longsor</a></p>
+      <p><a href="#">Peta Kawasan Rawan Longsor</a></p>
+    </aside>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Berita Bencana. Semua Hak Dilindungi.</p>
+  </footer>
+</body>
+</html>
